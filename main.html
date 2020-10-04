@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>VJTI Pointers</title>
+    <link rel="stylesheet" href="/css/style2.css">
+    <link rel="stylesheet" href="/samp/samp.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark secondary-color lighten-1">
+        <a class="navbar-brand" href="#">VJTI Pointers</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+            aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">SPI calculator
+                       
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="main.html">CPI Calculator
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-555" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">VJTI
+                    </a>
+                    <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-555">
+                        <a class="dropdown-item" href="http://vjti.ac.in">vjti.ac.in</a>
+                        <a class="dropdown-item" href="http://vjtimumbai.in">new site under constuction</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sugg.html">Suggest Us</a>
+                </li>
+                <li class="nav-item">
+
+                </li>
+            </ul>
+
+            <!-- <li class="nav-item avatar dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
+                            class="rounded-circle z-depth-0" alt="avatar image">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
+                        aria-labelledby="navbarDropdownMenuLink-55">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h1>Welcome to VJTI Pointers</h3>
+            <p class="container">Select your Branch and Semester </p>
+    </div> <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4 mar">
+                <label> Sem :</label><br>
+                <label> Sem 1</label><br>
+                <label> Sem 2</label><br>
+                <label> Sem 3</label><br>
+                <label> Sem 4</label><br>
+                <label> Sem 5</label><br>
+                <label> Sem 6</label><br>
+                <label> Sem 7</label><br>
+                <label> Sem 8</label><br>
+            </div>
+            <div class="col-xs-4 mar">
+                <form action="">
+                    <label for="spi"> SPI : </label><br>
+
+                    <input class="cpit" type="text" name="spival" id="1" value="0" onchange="maxi(this.id)"><br>
+                    <input class="cpit" type="text" name="spival" id="2" value="0" onchange="maxi(this.id)"><br>
+                    <input class="cpit" type="text" name="spival" id="3" value="0" onchange="maxi(this.id)"><br>
+                    <input class="cpit" type="text" name="spival" id="4" value="0" onchange="maxi(this.id)"><br>
+                    <input class="cpit" type="text" name="spival" id="5" value="0" onchange="maxi(this.id)"><br>
+                    <input class="cpit" type="text" name="spival" id="6" value="0" onchange="maxi(this.id)"><br>
+                    <input class="cpit" type="text" name="spival" id="7" value="0" onchange="maxi(this.id)"><br>
+                    <input class="cpit" type="text" name="spival" id="8" value="0" onchange="maxi(this.id)"><br>
+                </form>
+            </div>
+            <div class="col-xs-4 mar">
+                <form action="">
+                    <label for="spi"> CPI : </label><br>
+
+                    <input class="cpit" type="text" name="cpival" id="c1" value="" readonly><br>
+                    <input class="cpit" type="text" name="cpival" id="c2" value="" readonly><br>
+                    <input class="cpit" type="text" name="cpival" id="c3" value="" readonly><br>
+                    <input class="cpit" type="text" name="cpival" id="c4" value="" readonly><br>
+                    <input class="cpit" type="text" name="cpival" id="c5" value="" readonly><br>
+                    <input class="cpit" type="text" name="cpival" id="c6" value="" readonly><br>
+                    <input class="cpit" type="text" name="cpival" id="c7" value="" readonly><br>
+                    <input class="cpit" type="text" name="cpival" id="c8" value="" readonly><br>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="b butt" onclick="cal()" autofocus>CALCULATE CPI</Button>
+    <footer>
+        <div class="footerfinal">
+            <p id="para">Created By Abhay Patil &ensp; &ensp; Follow Me : </p>
+
+
+            <ul class="ulp">
+                <li class="lip"><a class="a1" href="https://www.instagram.com/its_abhay_patil/?hl=en"><i
+                            class="fab fa-instagram"></i></a></li>
+                <li class="lip"><a class="a1" href="https://twitter.com/AbhayPa17636909"><i
+                            class="fab fa-twitter"></i></a></li>
+                <li class="lip"><a class="a1" href="https://www.facebook.com/patilabhay679/"><i
+                            class="fab fa-facebook-f"></i></a></li>
+                <li class="lip"><a class="a1" href="https://www.youtube.com/channel/UClRf6WtMv5IxxTGfR_f9xHA"><i
+                            class="fab fa-youtube"></i></a></li>
+                <li class="lip"><a class="a1" href="https://www.linkedin.com/in/abhay-patil-0529bb1b6/"><i
+                            class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script>
+        var c = [];
+        var s = [];
+        var x = [];
+        var max = 0;
+        var a1, b1;
+        curmax = 0;
+        function maxi(idval) {
+            // curmax = idval;
+            // max = 1;
+            if (idval >= max) {
+                max = idval;
+            }
+            console.log(max);
+        }
+        function cal() {
+
+            s[0] = parseFloat(document.getElementById("1").value);
+            s[1] = parseFloat(document.getElementById("2").value);
+            s[2] = parseFloat(document.getElementById("3").value);
+            s[3] = parseFloat(document.getElementById("4").value);
+            s[4] = parseFloat(document.getElementById("5").value);
+            s[5] = parseFloat(document.getElementById("6").value);
+            s[6] = parseFloat(document.getElementById("7").value);
+            s[7] = parseFloat(document.getElementById("8").value);
+
+            x[0] = document.getElementById("c1");
+            x[1] = document.getElementById("c2");
+            x[2] = document.getElementById("c3");
+            x[3] = document.getElementById("c4");
+            x[4] = document.getElementById("c5");
+            x[5] = document.getElementById("c6");
+            x[6] = document.getElementById("c7");
+            x[7] = document.getElementById("c8");
+
+            s[0] = parseFloat(s[0]);
+            console.log("this is working");
+            c[0] = s[0];
+
+            x[0].value = s[0];
+            for (var i = 0; i < max-1; i++) {
+
+                a1 = s[i + 1];
+                b1 = (i + 1) * c[i];
+                console.log(a1);
+                c[i + 1] = ((a1 + b1) / (i + 2));
+
+                x[i + 1].value = c[i + 1];
+                // x[i + 1].value= x[i + 1].value.tofixed(2);
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

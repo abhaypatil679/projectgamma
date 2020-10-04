@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>VJTI Pointers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="samp/samp.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        img {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark secondary-color lighten-1">
+        <a class="navbar-brand" href="#">VJTI Pointers</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+            aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">SPI calculator
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="main.html">CPI Calculator</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-555" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">VJTI
+                    </a>
+                    <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-555">
+                        <a class="dropdown-item" href="http://vjti.ac.in">vjti.ac.in</a>
+                        <a class="dropdown-item" href="http://vjtimumbai.in">new site under constuction</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sugg.html">Suggest Us</a>
+                </li>
+                <li class="nav-item">
+                   
+                </li>
+            </ul>
+
+            <!-- <li class="nav-item avatar dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
+                            class="rounded-circle z-depth-0" alt="avatar image">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
+                        aria-labelledby="navbarDropdownMenuLink-55">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h1>Welcome to VJTI Pointers</h3>
+            <p class="container">Select your Branch and Semester </p>
+    </div> <br>
+    <div class="container">
+        <button type="button" class="b" id="btech" onclick="showbtech()" autofocus>B.Tech</Button>
+        <button type="button" class="b" id="mtech" onclick="showmtech()">M.Tech</Button>
+        <button type="button" class="b" id="mca" onclick="showmca()">MCA</Button>
+        &emsp; &emsp;&emsp;&emsp;&emsp;
+        <button type="button" class="c" id="next" onclick="next()">NEXT &#8594; </Button>
+        <br> <br>
+    </div>
+
+    <div id="divbtech" class="container">
+        <div class="row">
+            <div class=" col-xs-6">
+                <p> Select Branch : </P>
+                <form>
+                    <input type="radio" onclick="setbra(this.value)" value="Civil" id="Civil" name="Branch" checked>
+                    Civil <br>
+                    <input type="radio" onclick="setbra(this.value)" value="CS" id="Computer" name="Branch">
+                    Computer <br>
+                    <input type="radio" onclick="setbra(this.value)" value="Electrical" id="Electrical" name="Branch">
+                    Electrical <br>
+                    <input type="radio" onclick="setbra(this.value)" value="Mech" id="Mechanical" name="Branch">
+                    Mechanical <br>
+                    <input type="radio" onclick="setbra(this.value)" value="IT" id="IT" name="Branch"> IT <br>
+                    <input type="radio" onclick="setbra(this.value)" value="Prod" id="Production" name="Branch">
+                    Production <br>
+                    <input type="radio" onclick="setbra(this.value)" value="Textile" id="Textile" name="Branch"> Textile
+                    <br>
+                    <input type="radio" onclick="setbra(this.value)" value="Electronix" id="Electronix" name="Branch">
+                    Electronix <br>
+                    <input type="radio" onclick="setbra(this.value)" value="Extc" id="Extc" name="Branch"> Extc <br>
+                    <input type="radio" onclick="setbra(this.value)" value="Chemsa" id="Chemsa" name="Branch"> Chemsa
+                    <br>
+                </form>
+            </div>
+            <div class="col-xs-6">
+                <p> Select Semester : </P>
+                <form>
+                    <input type="radio" onchange="setsem(this.id)" id="1" name="sem" checked> sem1<br>
+                    <input type="radio" onchange="setsem(this.id)" id="2" name="sem"> sem2<br>
+                    <input type="radio" onchange="setsem(this.id)" id="3" name="sem"> sem3<br>
+                    <input type="radio" onchange="setsem(this.id)" id="4" name="sem"> sem4<br>
+                    <input type="radio" onchange="setsem(this.id)" id="5" name="sem"> sem5<br>
+                    <input type="radio" onchange="setsem(this.id)" id="6" name="sem"> sem6<br>
+                    <input type="radio" onchange="setsem(this.id)" id="7" name="sem"> sem7<br>
+                    <input type="radio" onchange="setsem(this.id)" id="8" name="sem"> sem8 <br>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="divmtech" class="container">
+        <div class="row">
+            <div class="col-xs-6">
+                <p> Select Branch : </P>
+                <form id="branch">
+                    <input type="radio" name="Branch" onclick="setbra(this.value)" value="auto" checked>
+                    automobile</input> <br>
+                    <input type="radio" name="Branch" onclick="setbra(this.value)" value="cadcam"> cad-cam </input><br>
+                    <input type="radio" name="Branch" onclick="setbra(this.value)" value="machinedesign"> machinedesign
+                    </input><br>
+                    <input type="radio" name="Branch" onclick="setbra(this.value)" value="thermal"> thermalengineering
+                    </input> <br>
+                    <input type="radio" name="Branch" onclick="setbra(this.value)" value="conman">
+                    constructionmanagement </input> <br>
+                    <input type="radio" name="Branch" onclick="setbra(this.value)" value="env">
+                    environmental</input><br>
+                    <input type="radio" name="Branch" onclick="setbra(this.value)" value="structural">
+                    structuralengineering </input><br>
+                    <input type="radio" name="Branch" onclick="setbra(this.value)" value="controlsys">
+                    controlsystems</input> <br>
+                    <input type="radio" name="Branch" onclick="setbra(this.value)" value="powersys"> power
+                    systems</input><br>
+                    <input type="radio" name="Branch" onclick="setbra(this.value)" value="elecronics">
+                    elecronics</input> <br>
+                    <input type="radio" name="Branch" onclick="setbra(this.value)" value="extc"> extc </input> <br>
+                    <input type="radio" name="Branch" onclick="setbra(this.value)" value="nims"> nims </input> <br>
+                    <input type="radio" name="Branch" onclick="setbra(this.value)" value="computer"> computer
+                    </input><br>
+                    <input type="radio" name="Branch" onclick="setbra(this.value)" value="software"> software
+                    </input><br>
+                    <input type="radio" name="Branch" onclick="setbra(this.value)" value="prod"> production</input> <br>
+                    <input type="radio" name="Branch" onclick="setbra(this.value)" value="proman">
+                    projectmanagement</input> <br>
+                    <input type="radio" name="Branch" onclick="setbra(this.value)" value="textiletech"> textile
+                    technology</input> <br>
+
+                </form>
+            </div>
+            <div class="col-xs-6">
+                <p> Select Semester : </P>
+                <form>
+                    <input type="radio" onchange="setsem(this.id)" id="1" name="sem" checked> sem1<br>
+                    <input type="radio" onchange="setsem(this.id)" id="2" name="sem"> sem2<br>
+                    <input type="radio" onchange="setsem(this.id)" id="3" name="sem"> sem3<br>
+                    <input type="radio" onchange="setsem(this.id)" id="4" name="sem"> sem4<br>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="divmca" class="container">
+        <p> Select Semester : </P>
+        <form>
+            <input type="radio" onchange="setsem(this.id)" id="1" name="sem" checked> sem1<br>
+            <input type="radio" onchange="setsem(this.id)" id="2" name="sem"> sem2<br>
+            <input type="radio" onchange="setsem(this.id)" id="3" name="sem"> sem3<br>
+            <input type="radio" onchange="setsem(this.id)" id="4" name="sem"> sem4<br>
+            <input type="radio" onchange="setsem(this.id)" id="5" name="sem"> sem5<br>
+            <input type="radio" onchange="setsem(this.id)" id="6" name="sem"> sem6<br>
+        </form>
+    </div>
+    <footer>
+        <div class="footerfinal">
+            <p id="para">Created By Abhay Patil &ensp; &ensp; Follow Me : </p>
+
+
+            <ul class="ulp">
+                <li class="lip"><a class="a1" href="https://www.instagram.com/its_abhay_patil/?hl=en"><i
+                            class="fab fa-instagram"></i></a></li>
+                <li class="lip"><a class="a1" href="https://twitter.com/AbhayPa17636909"><i
+                            class="fab fa-twitter"></i></a></li>
+                <li class="lip"><a class="a1" href="https://www.facebook.com/patilabhay679/"><i
+                            class="fab fa-facebook-f"></i></a></li>
+                <li class="lip"><a class="a1" href="https://www.youtube.com/channel/UClRf6WtMv5IxxTGfR_f9xHA"><i
+                            class="fab fa-youtube"></i></a></li>
+                <li class="lip"><a class="a1" href="https://www.linkedin.com/in/abhay-patil-0529bb1b6/"><i
+                            class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var btech = 1;
+        var mtech = 0;
+        var mca = 0;
+        var bra = "Civil";
+        var x = document.getElementById("divbtech");
+        x.style.display = "block";
+
+        var y = document.getElementById("divmtech");
+        y.style.display = "none";
+
+        var z = document.getElementById("divmca");
+        z.style.display = "none";
+
+        function showbtech() {
+            z.style.display = "none";
+            y.style.display = "none";
+            x.style.display = "block";
+            btech = 1;
+            var bra = "Civil";
+        }
+        function showmtech() {
+            x.style.display = "none ";
+            z.style.display = "none";
+            y.style.display = "block";
+            mtech = 1;
+            bra = "Auto";
+        }
+        function showmca() {
+            x.style.display = "none";
+            y.style.display = "none";
+            z.style.display = "block";
+            mca = 1
+        }
+        var sem = 1;
+        function setsem(s) {
+            sem = s;
+            console.log(sem);
+
+        }
+
+        function setbra(br) {
+            bra = br;
+
+            console.log(bra);
+        }
+        function next() {
+            var temp;
+            var deg;
+            if (btech === 1) {
+                deg = "Btech";
+                if (bra != "Civil") {
+                    temp = `${deg}/${bra}Sem${sem}.html`;
+                    console.log(bra);
+                }
+                else {
+                    temp = `${deg}/CivilSem${sem}.html`;
+                    console.log(bra);
+                }
+            }
+            if (mtech === 1) {
+                deg = "Mtech";
+                if (bra != "Auto") {
+                    temp = `${deg}/${bra}Sem${sem}.html`;
+                    console.log(bra);
+
+                }
+                else {
+
+                    temp = `${deg}/AutoSem${sem}.html`;
+                    console.log(bra);
+                }
+            }
+            if (mca === 1) {
+                deg = "MCA";
+                temp = `${deg}/MCASem${sem}.html`;
+            }
+
+            location.href = temp;
+        }
+    </script>
+
+</body>
+
+</html>
